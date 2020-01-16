@@ -3,23 +3,23 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        bat 'Hi, this is Anshul from LevelUp360'
-                        bat 'We are Starting the Testing'
+                        best 'Hi, this is Anshul from LevelUp360'
+                        best 'We are Starting the Testing'
                   }
             }
             stage('Build') {
                   steps {
-                        bat 'Building Sample Maven Project'
+                        best 'Building Sample Maven Project'
                   }
             }
             stage('Deploy') {
                   steps {
-                        bat "Deploying in Staging Area"
+                        best "Deploying in Staging Area"
                   }
             }
             stage('Deploy Production') {
                   steps {
-                        bat "Deploying in Production Area"
+                        best "Deploying in Production Area"
                   }
             }
       }
